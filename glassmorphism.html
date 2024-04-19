@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>GlassMorphism</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #2a2a2a;
+        position: relative;
+        height: 100vh;
+        color: white;
+        position: relative;
+      }
+      .roboto-mono {
+        font-family: "Roboto Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .d-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .c1,
+      .c2,
+      .c3,
+      .c4 {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+      }
+      .c1 {
+        background: linear-gradient(orangered, yellow);
+        top: 50px;
+        left: 50px;
+        border-radius: 50%;
+      }
+      .c2 {
+        background: linear-gradient(blue, green);
+        bottom: 50px;
+        left: 50px;
+        height: 170px;
+        border-radius: 50% 30% 20% 10%;
+      }
+      .c3 {
+        background: linear-gradient(purple, red);
+        bottom: 50px;
+        right: 50px;
+        border-radius: 30% 20% 40% 10%;
+      }
+      .stack {
+        height: 100vh;
+        width: 100vw;
+        backdrop-filter: blur(20px);
+      }
+      .cc {
+        background: rgba(100, 99, 99, 0.062);
+        position: absolute;
+        width: 450px;
+        height: 250px;
+        padding: 1rem;
+        border: 1px solid rgb(253, 253, 253);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(32, 32, 32, 0.116);
+
+        backdrop-filter: blur(10px);
+      }
+      .title {
+        font-size: 1.5rem;
+      }
+      .num {
+        font-size: 2.3rem;
+        margin-top: 5rem;
+        letter-spacing: 2px;
+        font-weight: bolder;
+      }
+      .details {
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+      }
+      .top {
+        font-size: 0.7rem;
+      }
+      .btm {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+      }
+      .details > div:last-child {
+        font-size: 2.5rem;
+        font-weight: bolder;
+      }
+      .c4 {
+        background: linear-gradient(purple, red);
+        border-radius: 50% 50%;
+        /* right: calc(50%-600px);
+        top: calc(50%-350px); */
+        right: 17%;
+        top: 15%;
+      }
+    </style>
+  </head>
+  <body class="d-center">
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="stack"></div>
+    <div class="c4"></div>
+    <div class="cc">
+      <div class="title">Credit Card</div>
+      <div class="num">4242 4343 4545 4646</div>
+      <div class="details">
+        <div>
+          <div class="top">credit card</div>
+          <div class="bottom">Sushil Dangoriya</div>
+        </div>
+        <div>
+          <div class="top">expiry date</div>
+          <div class="bottom">22/2024</div>
+        </div>
+        <div>VISA</div>
+      </div>
+    </div>
+  </body>
+</html>
